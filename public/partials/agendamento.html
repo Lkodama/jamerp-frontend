@@ -1,0 +1,109 @@
+<div class="clearfix">
+</div>
+<div class="row">
+    <div class="col-md-6 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Manter Agendamentos </h2>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <br />
+                <form class="form-horizontal form-label-left input_mask">
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Cliente</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" class="form-control" placeholder="Nome Cliente">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Telefone </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" class="form-control" placeholder="Telefone Contato" data-inputmask="'mask' : '(99) 99999-9999'">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Data </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Estúdio</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select class="form-control">
+                                    <option>Selecione o Estúdio...</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Horário</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select class="form-control">
+                                    <option>Horas...</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                              </select>
+                        </div>
+                    </div>
+
+
+
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                            <button type="submit" class="btn btn-success">Salvar</button>
+                            <button type="reset" class="btn btn-primary">Limpar</button>
+                            <button type="button" class="btn btn-danger">Cancelar</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Agendamentos </h2>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <div class="col-md-12  col-xs-12 form-group">
+                    <input type="text" class="form-control has-feedback-left" id="inputSuccess4" placeholder="O que você está buscando?">
+                    <span class="fa fa-search form-control-feedback left" aria-hidden="true"></span>
+                </div>
+                </br>
+                <table class="table table-striped">
+                    <tr>
+                        <th><a href="">Id</a></th>
+                        <th><a href="">Cliente</a></th>
+                        <th><a href="">Data</a></th>
+                        <th><a href="">Sala</a></th>
+                        <th><a href="">Horário</a></th>
+                        <th>Ação</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Fulando Silva</td>
+                        <td>25/06/2017</td>
+                        <td>01</td>
+                        <td>19:00</td>
+                        <td>
+                            <div class="clearfix">
+                                <div class="btn-group inline pull-left">
+                                    <button type="button" class="btn btn-primary"><span class="fa fa-edit"></button>
+                                    <button type="button" class="btn btn-danger"><span class="fa fa-trash-o"></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>

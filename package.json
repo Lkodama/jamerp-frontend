@@ -1,0 +1,14 @@
+{
+  "name": "jamerp",
+  "version": "1.0.0",
+  "description": "\"Project to manage studios\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leokodama",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

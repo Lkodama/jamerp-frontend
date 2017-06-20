@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="jamerp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JAM ERP | Sistema de Gerenciamento de Estúdios </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="css/custom/custom.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="css/nprogress/nprogress.css" rel="stylesheet">
+    <!-- FullCalendar -->
+    <link href="css/fullcalendar/fullcalendar.min.css" rel="stylesheet">
+    <link href="css/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+
+    <!-- jQuery -->
+    <script src="js/lib/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/lib/custom/custom.js"></script>
+    <!-- NProgress -->
+    <script src="js/lib/nprogress/nprogress.js"></script>
+    <!-- FullCalendar -->
+    <script src="js/lib/moment/moment.min.js"></script>
+    <script src="js/lib/fullcalendar/fullcalendar.min.js"></script>
+    <!-- Angular -->
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/lib/angular/angular-route.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/controllers/main-controller.js"></script>
+    <script src="js/controllers/produtos-controller.js"></script>
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="main.html" class="site_title"><i class="fa fa-music"></i> <span>Jam ERP</span></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="http://i2.kym-cdn.com/entries/icons/facebook/000/019/649/OK_thumb.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info" ng-controller="MainController">
+                            <span>Welcome,</span>
+                            <h2>{{user.name}}</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>General</h3>
+                            <ul class="nav side-menu">
+                                <li><a href="#!/main"><i class="fa fa-home"></i> Principal </a>
+
+                                </li>
+                                <li><a href="#!/agendamento"><i class="fa fa-calendar"></i> Agendamento </a>
+
+                                </li>
+                                <li><a href="#!/produtos"><i class="fa fa-edit"></i> Cadastro Produtos</a></li>
+                                <li><a href="#!/estudio"><i class="fa fa-music"></i> Cadastro de Salas</a></li>
+                                <li><a href="#!/funcionario"><i class="fa fa-group"></i> Cadastro de Funcionários</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_section">
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+
+                    <!-- /menu footer buttons -->
+                    <div class="sidebar-footer hidden-small">
+                        <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+                    </div>
+                    <!-- /menu footer buttons -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="http://i2.kym-cdn.com/entries/icons/facebook/000/019/649/OK_thumb.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                    <li><a href="javascript:;"> Profile</a></li>
+                                    <li>
+                                        <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                                    </li>
+                                    <li><a href="javascript:;">Help</a></li>
+                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <ng-view></ng-view>
+            </div>
+            <!-- page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-left">
+                    JAM ERP - Sistema de Gerenciamento de Estúdios
+                </div>
+                <div class="pull-right">
+                    Desenvolvido por <a href="https://colorlib.com">KodamaLabs</a>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+</body>
+
+</html>
